@@ -154,8 +154,9 @@ section {
 
 
 .container-link-projects:hover {
-	background-color: #242424 ;
-	transform: translateX(5px);
+	background-color: white ;
+	color: #242424;
+	transform: translateY(-5px);
 	transition: 0.3s;
 }
 
@@ -166,6 +167,15 @@ section {
 	margin: 2vw 2vw 0 2vw;
 }
 
+.project-object-title {
+	display: flex;
+	align-self: center;
+	text-align: center;
+	width: 100%;
+	font-size: 1.325rem;
+	justify-content: center;
+	color: #c9c9c9;
+}
 
 
 
