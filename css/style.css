@@ -68,7 +68,7 @@ section {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	font-size: 4.3125rem;
+	font-size: 3.3125rem;
 	text-align: center;
 }
 
@@ -76,7 +76,12 @@ section {
 #about-me {
 	display: flex;
 	align-items: center;
+	justify-content: center;
 	flex-direction: column;
+}
+
+#about-me p {
+	text-align: center;
 }
 
 #about-me img{
@@ -85,7 +90,7 @@ section {
 
 #about-me-title{
 	display: flex;
-	align-self: flex-start;
+	align-self: center;
 	font-size: 2.625rem;
 	justify-content: flex-start;
 	color: #c9c9c9;
@@ -96,13 +101,9 @@ section {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	gap:10%;
+	margin: 0 8vw 0 8vw;
 	font-size: 1.8rem;
 	text-align: flex-start;
-}
-
-#about-me-content{
-	width: 70;
 }
 
 
@@ -117,19 +118,25 @@ section {
 	display: flex;
 	font-size: 2.625rem;
 	color: #c9c9c9;
+	justify-content: center;
+	text-align: center;
+	width: 100%;
 }
 
 #footer-title{
 	font-size:2.625rem;
 	color: #c9c9c9;
+	display: flex;
+	justify-content: center;
 
 }
 
 .container-list-projects {
 	display: flex;
-	justify-content: flex-start;
+	justify-content: space-between;
 	width: 100%;
 	flex-wrap: wrap;
+	row-gap: 5vh;
 }
 
 
@@ -137,22 +144,29 @@ section {
 .container-link-projects{
 	display: flex;
 	width: 20vw;
-	height: 60vh;
+	height: auto;
 	background-color: #4e4e4e;
-	margin-right:2%;
-	margin-bottom: 2%;
 	border-radius: 10px;
 	justify-content: flex-start;
 	flex-wrap: wrap;
+	padding-bottom: 2vw;
 }
 
 
+.container-link-projects:hover {
+	background-color: #242424 ;
+	transform: translateX(5px);
+	transition: 0.3s;
+}
 
-.container-link-projects img {
-	align-self: flex-start;
+
+.container-link-projects p {
+	text-align: center;
 	width: 100%;
-	height: auto;
+	margin: 2vw 2vw 0 2vw;
 }
+
+
 
 
 .contaiter-img-projects{
@@ -165,9 +179,10 @@ section {
 
 .container-list-footer{
 	display: flex;
-	justify-content: flex-start;
-	width: 60%;
-	height: 4vh;
+	justify-content: space-between;
+	width: auto;
+	height: 3vh;
+	margin: 0 3vw 0 3vw;
 
 }
 
@@ -188,7 +203,6 @@ section {
 .container-link-footer:hover{
 	background-color:rgb(66, 66, 66);
 }
-
 
 
 
