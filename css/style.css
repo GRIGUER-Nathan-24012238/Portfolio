@@ -16,13 +16,34 @@
 }
 
 
+::-webkit-scrollbar {
+    width: 12px; 
+    height: 12px; 
+}
+
+
+::-webkit-scrollbar-track {
+    background: #242424;
+}
+
+
+::-webkit-scrollbar-thumb {
+    background-color: #4e4e4e; 
+    border-radius: 6px;      
+    border: 3px solid #242424; 
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #c9c9c9; 
+}
+
 body{
 	display: flex;
 	margin: 0px;
 	flex-direction: column;
 	font-family: 'Segoe UI',Tahoma,Verdana,sans-serif;
 	color: white;
-	background: #242424;
+	background-color: #242424;
 	margin-left: 14vw;
 	margin-right: 14vw;
 }
@@ -57,6 +78,10 @@ a:hover{
 a{
 	color: white;
 	text-decoration: none;
+}
+
+ul {
+	padding: 0;
 }
 
 
@@ -110,8 +135,14 @@ section {
 #projects{
 	display: flex;
 	flex-direction: column;
-	align-items: flex-start;
+	align-items: center;
 	justify-content: flex-start;
+	/* à tester
+	border-style: solid;
+	border-color: black;
+	border-radius: 10px;
+	padding-bottom: 5vw;
+	*/
 }
 
 #projects-title{
@@ -133,25 +164,44 @@ section {
 
 .container-list-projects {
 	display: flex;
-	justify-content: space-between;
-	width: 100%;
-	flex-wrap: wrap;
-	row-gap: 5vh;
+	justify-content: flex-start;
+	width: 70%;
+	margin: 0;
+	list-style: none;
+	gap: 4vw;
+	overflow-x: auto;
+	scroll-snap-type: x mandatory;
+	scroll-behavior: smooth;
+	flex-wrap: nowrap;
+	padding-top: 2vh; 
+    padding-bottom: 2vh;
 }
+
 
 
 
 .container-link-projects{
 	display: flex;
-	width: 20vw;
 	height: auto;
 	background-color: #4e4e4e;
 	border-radius: 10px;
-	justify-content: flex-start;
+	justify-content: center;
 	flex-wrap: wrap;
 	padding-bottom: 2vw;
+	flex: 0 0 15vw;
+	transition: 0.3s;
+	align-content: center;
 }
 
+
+.container-link-projects a {
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+	width: 100%;
+	padding: 2vw;
+	box-sizing: border-box;
+}
 
 .container-link-projects:hover {
 	background-color: white ;
@@ -161,22 +211,16 @@ section {
 }
 
 
-.container-link-projects p {
+.text-project-card{
 	text-align: center;
 	width: 100%;
-	margin: 2vw 2vw 0 2vw;
 }
 
 .project-object-title {
-	display: flex;
-	align-self: center;
-	text-align: center;
-	width: 100%;
-	font-size: 1.325rem;
-	justify-content: center;
+
+	font-size: 1.5rem;
 	color: #c9c9c9;
 }
-
 
 
 .contaiter-img-projects{

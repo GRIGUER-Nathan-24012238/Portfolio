@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <title>Portfolio</title>
+    <title>Portfolio - Nathan Griguer</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="UTF-8">
     <meta name="author" content="Nathan Griguer">
     <meta name="description" content="Portfolio personnel regroupant mes activités favorites">
@@ -13,7 +14,7 @@
 <!--NavBar-->
 <nav class="nav-menu">
 
-        <p id="nav-menu-title"> Griguer Nathan </p>
+        <h1 id="nav-menu-title"> Griguer Nathan </h1>
 
         <div id="nav-menu-sections">
             <a href="media/CV.pdf" download> CV </a>
@@ -23,23 +24,22 @@
 </nav>
 
 <hr style="width:100%"> 
+
 <!--Section Principale d'accroche-->
 <section id="accroche">
     <div>
-        <p>Recherche de stage pour l'année 2026-2027
+        <p>Recherche de stage pour l'année 2026-2027</p>
     </div>
 </section>
 
 <!--Section About Me-->
 <section id="about-me">
         <div id="about-me-title">
-            <p>
-                About me
-            </p>
+            <h2>About me</h2>
         </div>
 
         <div id="about-me-content">
-            <p>Passioné par l'informatique et le développement, je poursuis un BUT spécialisé 
+            <p>Passionné par l'informatique et le développement, je poursuis un BUT spécialisé 
                 Informatique à l'IUT d'Aix Marseille. Je recherche actuellement une alternance 
                 pour l'année 2025-2026 afin me mettre en application mes compétences.</p>
         </div>
@@ -52,41 +52,66 @@
         <p>Projects</p>
     </div>
 
-    <div class="container-list-projects">
-        <a class="container-link-projects" href="https://github.com/SENE-Pablo-2326099b/WEB-BUT-1.02">
-            <p class="project-object-title">Moodify</p>
-            <p>Site web pour choisir sa playlist en fonction de son mood.</p>
-            <p>Technologies utilisées : HTML, CSS, Javascript</p>
+    <ul class="container-list-projects">
+        <li class="container-link-projects" >
+            <a href="https://github.com/SENE-Pablo-2326099b/WEB-BUT-1.02">
+                <h3 class="text-project-card  project-object-title">Moodify</h3>
+                <p class="text-project-card">Site web pour choisir sa playlist en fonction de son mood.</p>
+                <p class="text-project-card"><strong> Technologies utilisées : HTML, CSS, Javascript</strong></p>
+            </a>
+        </li>
+
+        <li class="container-link-projects" >
+            <a  href="https://github.com/GRIGUER-Nathan-24012238/S201_BomberMan">
+                <h3 class="text-project-card project-object-title">BomberMan</h3>
+                <p class="text-project-card">Jeu BomberMan en Java FX</p>
+                <p class="text-project-card"><strong> Technologies utilisées : JavaFX</strong></p>
         </a>
+    </li>
 
-        <a class="container-link-projects" href="https://github.com/GRIGUER-Nathan-24012238/S201_BomberMan">
-            <p class="project-object-title">BomberMan</p>
-            <p>Jeu BomberMan en Java FX</p>
-            <p>Technologies utilisées : JavaFX</p>
-        </a>
+        <li class="container-link-projects" >
+            <a href="https://github.com/NathanGrgr/Machine_Learning_Groupe">
+                <h3 class="text-project-card  project-object-title">Machine Learning</h3>
+                <p class="text-project-card">Representation simplifié du fonctionnement de l'algorithme de Machine 
+                    Learning utilisé par bcp d'IA générative ajd</p>
+                <p class="text-project-card"><strong> Technologies utilisées : Python</strong> </p>
+            </a>
+        </li>
 
-        <a class="container-link-projects" href="https://github.com/NathanGrgr/Machine_Learning_Groupe">
-            <p class="project-object-title">Machine Learning</p>
-            <p>Representation simplifié du fonctionnement de l'algorithme de Machine 
-                Learning utilisé par bcp d'IA générative ajd</p>
-            <p>Technologies utilisées : Python</p>
-        </a>
+        <li class="container-link-projects" >
+            <a href="https://github.com/DARGENTOLLE-Francois/Project_R304">
+                <h3 class="text-project-card  project-object-title">Simulation en 50 av JC</h3>
+                <p class="text-project-card">Projet confrontant les gaulois et les romains en 50 av JV. M'a permit d'intégrer des
+                    patrons de conceptions.
+                </p>
+                <p class="text-project-card"><strong> Technologies utilisées : Java </strong> </p>
+            </a>     
+        </li>
 
-        <a class="container-link-projects" href="https://github.com/DARGENTOLLE-Francois/Project_R304">
-            <p class="project-object-title">Simulation en 50 av JC</p>
-            <p>Projet confrontant les gaulois et les romains en 50 av JV. M'a permit d'intégrer des
-                patrons de conceptions.
-            </p>
-            <p>Technologie utilisées : Java</p>
-        </a>     
+        <li class="container-link-projects" >
+            <a href="https://github.com/RADJOU-Dinesh-24003262/SAEManager">
+                <h3 class="text-project-card  project-object-title">SAEManager</h3>
+                <p class="text-project-card">Application web permettant le suivi des SAEs dans le département informatique
+                </p>
+                <p class="text-project-card"><strong> Technologies utilisées : PHP, HTML,CSS, PicoCSS, SQL </strong> </p>
+            </a>     
+        </li>
 
-    </div>
+        <li class="container-link-projects" >
+            <a href="https://github.com/NathanGrgr/SAE1.01_PacManProjet">
+                <h3 class="text-project-card  project-object-title">PacmanMan-like</h3>
+                <p class="text-project-card">Jeu de plateforme s'inspirant du jeu Pacman
+                </p>
+                <p class="text-project-card"><strong> Technologies utilisées : C++ </strong> </p>
+            </a>     
+        </li>
+    </ul>
 
 </section>
 
 
 <footer>
-        <div id="footer-title"><p> Contact</p></div>
+        <div id="footer-title"><p>Contact</p></div>
 
         <div class="container-list-footer">
 	        
