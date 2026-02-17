@@ -37,24 +37,29 @@
     background-color: #c9c9c9; 
 }
 
+
+html {
+	scroll-behavior: smooth;
+}
+
 body{
 	display: flex;
-	margin: 0px;
 	flex-direction: column;
 	font-family: 'Segoe UI',Tahoma,Verdana,sans-serif;
 	color: white;
 	background-color: #242424;
+	margin: 0px;
+}
+
+body > :not(.nav-menu):not(footer):not(#project-page){
 	margin-left: 5vw;
 	margin-right: 5vw;
 }
 
 
+
+
 .nav-menu {
-	position: relative;
-	left: 50%;
-	right: 50%;
-	margin-left: -50vw;
-	margin-right: -50vw;
 	width: 100vw;
 	display: flex;
 	justify-content: space-between;
@@ -64,7 +69,8 @@ body{
 	color: #242424;
 
 	position: fixed;
-	z-index: 1000;
+	z-index: 10;
+	top:0;
 }
 
 
@@ -157,7 +163,6 @@ section {
 
 .container-link-intro:hover{
 	background-color:rgb(66, 66, 66);
-	transform: scale(1.1);
 }
 
 
@@ -221,11 +226,6 @@ section {
 
 #project-page {
 	background-color: #1a1a1a;
-	position: relative;
-	left: 50%;
-	right: 50%;
-	margin-left: -50vw;
-	margin-right: -50vw;
 	width: 100vw;
 	height: 100vh;
 	display: flex;
@@ -391,10 +391,6 @@ section {
 footer {
     position: relative;
     width: 100vw;
-    left: 50%;
-    right: 50%;
-    margin-left: -50vw;
-    margin-right: -50vw;
 	margin-top: 5vh;
     background-color: #1a1a1a;
 	color: #c9c9c9;
