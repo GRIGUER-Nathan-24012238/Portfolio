@@ -56,9 +56,9 @@ p {
 	text-align:justify;
 }
 
-body > :not(.nav-menu):not(footer):not(#project-page){
-	margin-left: 5vw;
-	margin-right: 5vw;
+body > :not(.nav-menu):not(footer):not(#project-page):not(.main-container-domain){
+	margin-left: 10vw;
+	margin-right: 10vw;
 }
 
 
@@ -116,8 +116,6 @@ section {
 	flex-direction: row;
 	height: 95vh;
 	width: auto;
-	padding-left: 5vw;
-	padding-right: 5vw;
 	justify-content: center;
 
 	gap: 10vw;
@@ -146,6 +144,7 @@ section {
 .contact-intro {
 	display: flex;
 	flex-direction: row;
+	justify-content: center;
 	gap: 5%;
 }
 
@@ -230,8 +229,103 @@ section {
 }
 
 
-#project-page {
+.main-container-domain {
+	display: grid
+}
+
+.background-block {
+	width: 100vw;
+	height: 100vh;
 	background-color: #1a1a1a;
+	grid-area: 1/1;
+}
+
+.domain-section {
+	display: flex;
+	flex-direction: column;
+	grid-area: 1/1;
+	margin-left: 10vw;
+	margin-right: 10vw;
+	justify-content: center;
+	gap: 5%;
+
+}
+
+.domain-main-title {
+	display: flex;
+	font-size: 2.625rem;
+	color: #e3e2e2;
+	font-weight: 700;
+}
+
+
+.all-domains {
+	display: flex;
+	justify-content: flex-start;
+	gap: 3vw;
+	flex-wrap: wrap;
+	margin-bottom: 5vh;
+}
+
+.domain-title-and-list {
+	display: flex;
+	justify-content: space-around;
+	flex-direction: column;
+	border: 2px solid rgb(59, 59, 59);
+	border-radius: 10px;
+	width: 30%;
+	padding: 4vh;
+}
+
+.domain-title-logo {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	gap: 2vh;
+	margin-bottom: 2vh;
+}
+
+.domain-logo {
+	display: flex;
+	background-color: #1a1a1a;
+	border-radius: 10px;
+	padding: 1vh;
+}
+
+
+.domain-title {
+	display: flex;
+	font-size: 1.5rem;
+	color: #e3e2e2;
+	font-weight: 700;
+}
+
+.domain-list {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 10px;
+}
+
+.domain-card {
+	display: flex;
+	border: 2px solid rgb(59, 59, 59);
+	border-radius: 15px;
+	width: 20%;
+	height: 4vh;
+	align-items: center;
+	justify-content: center;
+	text-size-adjust: 0.5rem;
+}
+
+
+.domain-card p {
+	display: flex;
+	font-size: 0.9rem;
+	color: #c9c9c9;
+}
+
+#project-page {
+	color: #1a1a1a;
 	width: 100vw;
 	height: 100vh;
 	display: flex;
@@ -299,13 +393,13 @@ section {
 
 .container-link-projects{
 	display: flex;
-	height: auto;
 	background-color: #4e4e4e;
 	border-radius: 10px;
 	justify-content: center;
 	flex-wrap: wrap;
 	flex: 0 0 15vw;
 	transition: 0.3s;
+	margin-bottom: 2vh;
 	align-content: center;
 }
 
