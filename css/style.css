@@ -374,6 +374,71 @@ section {
 	margin: 0;
 }
 
+
+.education-section {
+	display: flex;
+	flex-direction: column;
+	margin-top: 5vh;
+	height: 70vh;
+}
+
+.education-list {
+	display: flex;
+	margin-top: 3vw;
+	gap: 5vw;
+	margin-bottom: 3vw;
+}
+
+
+.education-title-logo {
+	display: flex;
+	gap: 1vw;
+	align-items: center;
+	justify-content: center;
+}
+
+.education-title {
+	display: flex;
+	font-size: 2.625rem;
+	color: #e3e2e2;
+	font-weight: 700;
+}
+
+.education-card {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 35vw;
+	height: 30vh;
+
+	border: 2px solid rgb(59, 59, 59);
+	border-radius: 10px;
+}
+
+
+.education-card p {
+	text-align: center;
+	margin: 2vh;
+}
+
+.education-card-title {
+	font-weight: 700;
+	font-size: 1.4rem;
+
+}
+
+
+.education-card-year {
+	font-size: 1.4rem;
+}
+
+
+.education-card-place {
+	font-size: 1.2rem;
+	color: #c9c9c9;
+}
+
 .container-list-projects {
 	display: flex;
 	justify-content: flex-start;
