@@ -336,29 +336,27 @@
     
 </section>
 
-<div class="contact-bar">
-        <div id="footer-title">
+<section class="contact-section">
+        <div id="contact-title">
             <p>Contact</p>
         </div>
 
-        <form class="footer-form" action="mailto:nathan.griguer@etu.univ-amu.fr?content-type=text/html&amp;subject=Demande%20de%20service%20Web%20Griguer%20Nathan" method="post" enctype="text/plain">
-            <label for="form-name">Votre Nom/Prénom</label><input id="form-name" type="text" name="Nom et Prénom">
-            <label for="form-message">Votre Message</label><input id="form-message" type="text" name="Message">
-            <input type="submit" value="Envoyer"> 
+
+        <form class="contact-form" action="mailto:nathan.griguer@etu.univ-amu.fr?content-type=text/html&amp;subject=Demande%20de%20service%20Web%20Griguer%20Nathan" method="post" enctype="text/plain">
+                
+            <div class="contact-form-text">
+                <label for="form-name" id="label-form-name">Votre Nom/Prénom</label><input placeholder="Jean Dupont" id="form-name" class="form-text" type="text" name="Nom et Prénom">
+            </div>
+                
+            <div class="contact-form-text">
+                <label for="form-message" id="label-form-message">Votre Message</label><textarea id="form-message" placeholder="Votre message..." class="form-text" type="text" name="Message"></textarea>
+            </div>
+                
+            <input id="submit-form-input" type="submit"  value="Envoyer le message"> 
+
         </form>
 
-
-        <div class="container-list-footer">
-	        
-            <a href="https://www.linkedin.com/in/nathan-griguer-a51267346/" class="container-link-footer">Linkedin </a>
-            
-            <a href="https://github.com/GRIGUER-Nathan-24012238" class="container-link-footer">Github </a>
-
-            <a href="https://www.instagram.com/nathan_grgr/" class="container-link-footer">Instagram</a>
-            
-        </div>
-
-</div>
+</section>
 
 <footer>
     <p>© Griguer Nathan - Tous droits reservés</p>
