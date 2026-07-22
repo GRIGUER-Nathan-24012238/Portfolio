@@ -56,7 +56,7 @@ p {
 	text-align:justify;
 }
 
-body > :not(.nav-menu):not(footer):not(#project-page):not(.main-container-domain){
+body > :not(.nav-menu):not(footer):not(.main-container){
 	margin-left: 10vw;
 	margin-right: 10vw;
 }
@@ -66,7 +66,7 @@ body > :not(.nav-menu):not(footer):not(#project-page):not(.main-container-domain
 
 .nav-menu {
 	width: 100vw;
-	height: 15vh;
+	height: 10vh;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
@@ -229,12 +229,12 @@ section {
 }
 
 
-.main-container-domain {
+.main-container {
 	display: grid
 }
 
 .background-block {
-	width: 100vw;
+	width: auto;
 	height: 100vh;
 	background-color: #1a1a1a;
 	grid-area: 1/1;
@@ -244,10 +244,13 @@ section {
 	display: flex;
 	flex-direction: column;
 	grid-area: 1/1;
+	height: 95vh;
+	width: auto;
 	margin-left: 10vw;
 	margin-right: 10vw;
 	justify-content: center;
 	gap: 5%;
+	align-items: center;
 
 }
 
@@ -261,7 +264,7 @@ section {
 
 .all-domains {
 	display: flex;
-	justify-content: flex-start;
+	justify-content: center;
 	gap: 3vw;
 	flex-wrap: wrap;
 	margin-bottom: 5vh;
@@ -324,33 +327,15 @@ section {
 	color: #c9c9c9;
 }
 
-#project-page {
-	color: #1a1a1a;
-	width: 100vw;
-	height: 100vh;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-}
+
 
 
 #projects{
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	justify-content: flex-start;
-	/*
-	border-style: solid;
-	border-color: black;
-	border-radius: 50px;
-
-	background-color: #1a1a1a;
-		padding-bottom: 5vw;
-	*/
-	padding-bottom: 2vw;
-	margin-left: 12vw;
-	margin-right: 12vw;
-	margin-bottom: 5vw;
+	justify-content: center;
+	grid-area: 1/1;
 }
 
 #projects-title{
@@ -365,9 +350,11 @@ section {
 
 .education-section {
 	display: flex;
+
 	flex-direction: column;
 	margin-top: 5vh;
-	height: 60vh;
+	height: 95vh;
+	justify-content: center;
 }
 
 .education-list {
@@ -379,18 +366,13 @@ section {
 }
 
 
-.education-title-logo {
-	display: flex;
-	gap: 1vw;
-	align-items: center;
-	justify-content: center;
-}
-
-.education-title {
+.section-title {
 	display: flex;
 	font-size: 2.625rem;
 	color: #e3e2e2;
 	font-weight: 700;
+	align-items: center;
+	justify-content: center;
 }
 
 .education-card {
@@ -432,7 +414,10 @@ section {
 
 .experience-section {
 	display: flex;
+	grid-area: 1/1;
+	align-items: center;
 	flex-direction: column;
+	justify-content: center;
 }
 
 .experience-title {
@@ -600,10 +585,11 @@ section {
 
 .contact-section {
 	display: flex;
+	grid-area: 1/1;
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
-	width: 80vw;
+	height: 95vh;
 }
 
 
@@ -665,7 +651,6 @@ section {
 footer {
     position: relative;
     width: 100vw;
-	margin-top: 5vh;
     background-color: #1a1a1a;
 	color: #c9c9c9;
 	text-align: center;
@@ -682,7 +667,7 @@ footer p {
 
 
 .nav-menu, footer {
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3); 
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3); 
 }
 
 @media screen and (max-width: 600px){
