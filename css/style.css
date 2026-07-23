@@ -748,6 +748,11 @@ footer p {
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3); 
 }
 
+
+.section-title p {
+	text-align: center;
+}
+
 @media screen and (max-width: 600px){
 	body {
 		padding-top: 10vh;
